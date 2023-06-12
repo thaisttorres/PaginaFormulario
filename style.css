@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+   font-family: 'Source Code Pro', monospace;
+}
+.screen{
+    display: flex;
+    height: 100vh;
+
+}
+.leftside{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftside img{
+    max-width: 500px;
+    height: auto;
+    display: inline-block;
+}
+.rightside{
+    width: 500px;
+    background-color: #da882a;
+    padding: 70px;
+}
+.rightside h1{
+    text-align: center;
+}
+.rightside label{
+    display: block;
+    margin-bottom: 20px;
+}
+.rightside input{
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    outline: 0;
+    margin: 10px;
+}
+.error{
+    font-size: 10px;
+    color: white;
+    border: 1px solid #FF0000;
+    text-align: center;
+    border-radius: 10px;
+    padding: 3px;
+    margin-left: 20px;
+   
+}
+.titulo::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+@keyframes pisca {
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+.btn-cadastro{
+    width: 250px;
+    background-color: #da882a;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+   
+}
+.btn-cadastro:hover{
+    background-color: rgb(173, 15, 15);
+    cursor: pointer;
+    
+}
+.submit{
+    background-color: white;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    
+}
+.submit:hover{
+    background-color: #da882a;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&family=Josefin+Sans:ital,wght@1,300&family=Montserrat:wght@300&family=Noto+Serif&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Validador de Formulario</title>
+</head>
+<body>
+   <div class="screen">
+    
+    <div class="leftside">
+
+        <h1 class="titulo">Bem vindo ao nosso site</h1>
+        <img src="computador.jpg" alt="computador">
+        
+        <button class="btn-cadastro" >Clique aqui para se cadastrar</button>
+
+    </div>
+    </div>
+            
+    <div class="rightside">
+        <h1>Crie Uma conta</h1>
+
+        <form method="POST" action= "cadastro.php" class="b7validator">
+
+            <label for="Nome">
+                 Nome:<br/>
+                <input type="text" name="Nome" data-rules="required|min=2 ">
+            </label>
+
+            <label>
+                Email:<br/>
+                <input type="text" name="Email" data-rules="required|email" >
+            </label>
+            <label>
+                Senha:<br/>
+                <input type="password" name="password" data-rules="required|min=4">
+            </label>
+            <label for="">
+                <input class="submit" type="submit" value="Cadastrar">
+            </label>
+
+        </form>
+
+        <div>
+           Ja tem uma conta? <a href=""> Faca login</a>
+        </div>
+
+    </div>
+
+   </div>
+   
+        
+ <script src="script.js"></script>   
+</body>
+</html>
